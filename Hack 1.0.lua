@@ -15,8 +15,13 @@ local UICorner_4 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local XButton = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local OpenButton = Instance.new("TextButton")
+local InvisibleButton = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local OpenButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -26,7 +31,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
 MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-MainFrame.BackgroundColor3 = Color3.fromRGB(117, 255, 225)
+MainFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 MainFrame.BackgroundTransparency = 0.500
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
@@ -39,7 +44,7 @@ FlyButton.AnchorPoint = Vector2.new(0.5, 0.5)
 FlyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FlyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FlyButton.BorderSizePixel = 0
-FlyButton.Position = UDim2.new(0.500701249, 0, 0.497950822, 0)
+FlyButton.Position = UDim2.new(0.83566457, 0, 0.292571843, 0)
 FlyButton.Size = UDim2.new(0.221599028, 0, 0.127049178, 0)
 FlyButton.Font = Enum.Font.FredokaOne
 FlyButton.Text = "Fly"
@@ -54,7 +59,7 @@ SpeedButton.AnchorPoint = Vector2.new(0.5, 0.5)
 SpeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SpeedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SpeedButton.BorderSizePixel = 0
-SpeedButton.Position = UDim2.new(0.500701249, 0, 0.184992373, 0)
+SpeedButton.Position = UDim2.new(0.17796281, 0, 0.292571843, 0)
 SpeedButton.Size = UDim2.new(0.221599028, 0, 0.127049178, 0)
 SpeedButton.Font = Enum.Font.FredokaOne
 SpeedButton.Text = "Speed"
@@ -69,7 +74,7 @@ NoclipButton.AnchorPoint = Vector2.new(0.5, 0.5)
 NoclipButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NoclipButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NoclipButton.BorderSizePixel = 0
-NoclipButton.Position = UDim2.new(0.500701308, 0, 0.799180329, 0)
+NoclipButton.Position = UDim2.new(0.498256385, 0, 0.29062286, 0)
 NoclipButton.Size = UDim2.new(0.221599117, 0, 0.127049178, 0)
 NoclipButton.Font = Enum.Font.FredokaOne
 NoclipButton.Text = "Noclip"
@@ -98,10 +103,62 @@ XButton.TextSize = 50.000
 
 UICorner_5.Parent = XButton
 
+InvisibleButton.Name = "InvisibleButton"
+InvisibleButton.Parent = MainFrame
+InvisibleButton.AnchorPoint = Vector2.new(0.5, 0.5)
+InvisibleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InvisibleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InvisibleButton.BorderSizePixel = 0
+InvisibleButton.Position = UDim2.new(0.499926418, 0, 0.500891745, 0)
+InvisibleButton.Size = UDim2.new(0.27383849, 0, 0.127049178, 0)
+InvisibleButton.Font = Enum.Font.FredokaOne
+InvisibleButton.Text = "Invisible"
+InvisibleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InvisibleButton.TextSize = 30.000
+
+UICorner_6.Parent = InvisibleButton
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.508748293, 0, 0.876241803, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "@Cursed Studios"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.254469603, 0, 0.0204960983, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Universal "
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 30.000
+
+TextLabel_3.Parent = MainFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.178293243, 0, 0.876241803, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "V 1.0"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+
 OpenButton.Name = "OpenButton"
 OpenButton.Parent = ScreenGui
 OpenButton.AnchorPoint = Vector2.new(0.5, 0.5)
-OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+OpenButton.BackgroundTransparency = 0.500
 OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 OpenButton.BorderSizePixel = 0
 OpenButton.Position = UDim2.new(0.105876863, 0, 0.5, 0)
@@ -111,14 +168,14 @@ OpenButton.Text = "Open"
 OpenButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 OpenButton.TextSize = 30.000
 
-UICorner_6.Parent = OpenButton
+UICorner_7.Parent = OpenButton
 
 -- Scripts:
 
-local function QUTOWH_fake_script() -- ScreenGui.LocalScript 
+local function CERYMSG_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
-	-- LocalScript dentro del ScreenGui (versiÛn corregida y m·s segura)
+	-- LocalScript dentro del ScreenGui (con invisibilidad a√±adida)
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local UserInputService = game:GetService("UserInputService")
@@ -127,27 +184,30 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 	local player = Players.LocalPlayer
 	local gui = script.Parent
 	
-	-- GUI references (ajusta los nombres si difieren)
+	-- GUI references (ajusta si tus nombres difieren)
 	local openButton = gui:WaitForChild("OpenButton")
 	local mainFrame = gui:WaitForChild("MainFrame")
 	local closeButton = mainFrame:WaitForChild("XButton")
 	local flyButton = mainFrame:WaitForChild("FlyButton")
 	local speedButton = mainFrame:WaitForChild("SpeedButton")
 	local noclipButton = mainFrame:WaitForChild("NoclipButton")
+	local invisibleButton = mainFrame:FindFirstChild("InvisibleButton") -- nuevo
 	
-	-- Asegurar colores iniciales (rojo = inactivo)
+	-- Inicializar colores si faltan
 	flyButton.BackgroundColor3 = flyButton.BackgroundColor3 or Color3.fromRGB(255, 0, 0)
 	speedButton.BackgroundColor3 = speedButton.BackgroundColor3 or Color3.fromRGB(255, 0, 0)
 	noclipButton.BackgroundColor3 = noclipButton.BackgroundColor3 or Color3.fromRGB(255, 0, 0)
+	if invisibleButton then invisibleButton.BackgroundColor3 = invisibleButton.BackgroundColor3 or Color3.fromRGB(255, 0, 0) end
 	openButton.BackgroundColor3 = openButton.BackgroundColor3 or Color3.fromRGB(0, 120, 255)
 	
-	-- Guardar tamaÒo original del OpenButton para hover seguro
+	-- Guardar tama√±o original del OpenButton para hover seguro
 	local openButtonOriginalSize = openButton.Size
 	
 	-- Estados
 	local flying = false
 	local speedActive = false
 	local noclip = false
+	local invisibleActive = false -- NUEVO
 	
 	-- Valores
 	local normalSpeed = 16
@@ -165,7 +225,7 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 	local charDiedConn
 	
 	-- ======================
-	-- Utilidades de animaciÛn
+	-- Utilidades de animaci√≥n
 	-- ======================
 	local function fadeIn(frame)
 		if not frame then return end
@@ -200,7 +260,6 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 			end
 		end
 		task.delay(0.25, function()
-			-- verificar todavÌa existe antes de ocultar
 			if frame and frame.Parent then
 				frame.Visible = false
 			end
@@ -255,9 +314,7 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 	end
 	
 	local function safeSetAssemblyLinearVelocity(part, vel)
-		-- pcall por si la API no est· disponible en este contexto
 		pcall(function()
-			-- algunos R6/R15 usan AssemblyLinearVelocity, otros permiten Velocity; usamos pcall
 			if part and part:IsA("BasePart") then
 				if part.AssemblyLinearVelocity ~= nil then
 					part.AssemblyLinearVelocity = vel
@@ -308,6 +365,42 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 	end
 	
 	-- ======================
+	-- INVISIBILIDAD (NUEVO)
+	-- ======================
+	-- Aplica LocalTransparencyModifier a todas las partes/handles para ocultar localmente
+	local function setLocalTransparencyForCharacter(char, value)
+		if not char then return end
+		for _, obj in ipairs(char:GetDescendants()) do
+			if obj:IsA("BasePart") then
+				-- Usa pcall por seguridad
+				pcall(function() obj.LocalTransparencyModifier = value end)
+			elseif obj:IsA("Decal") then
+				-- opcional: ocultar decals (caras) poniendo Transparency si existe
+				pcall(function() obj.Transparency = value end)
+			end
+		end
+		-- Para accesorios que tengan Handle, tambi√©n se cubre por GetDescendants
+	end
+	
+	local function startInvisible()
+		invisibleActive = true
+		if invisibleButton then pcall(function() invisibleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) end) end
+		-- aplicar inmediatamente si el personaje existe
+		if character then
+			setLocalTransparencyForCharacter(character, 1)
+		end
+	end
+	
+	local function stopInvisible()
+		invisibleActive = false
+		if invisibleButton then pcall(function() invisibleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) end) end
+		-- restaurar
+		if character then
+			setLocalTransparencyForCharacter(character, 0)
+		end
+	end
+	
+	-- ======================
 	-- Actualizar referencias al personaje
 	-- ======================
 	local function onCharacterAdded(char)
@@ -346,11 +439,21 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 			startFly()
 		end
 	
-		-- si muere, limpiar (evita conexiones colgando)
+		-- si invisible estaba activo, reactivar (aplica LocalTransparencyModifier)
+		if invisibleActive then
+			startInvisible()
+		else
+			-- asegurar que no quede invisibilidad de otros scripts
+			stopInvisible()
+		end
+	
+		-- limpiar conexiones al morir
 		if humanoid then
 			charDiedConn = humanoid.Died:Connect(function()
 				if flyConn then flyConn:Disconnect() flyConn = nil end
 				if noclipConn then noclipConn:Disconnect() noclipConn = nil end
+				-- al morir, restauramos visibilidad local para evitar quedar "invisible" en pantallas de muerte
+				stopInvisible()
 			end)
 		end
 	end
@@ -398,17 +501,100 @@ local function QUTOWH_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 	
-	-- Hover visual seguro para OpenButton (usa tamaÒo original guardado)
+	if invisibleButton then
+		invisibleButton.MouseButton1Click:Connect(function()
+			if invisibleActive then
+				stopInvisible()
+			else
+				startInvisible()
+			end
+		end)
+	end
+	
+	-- Hover visual seguro para OpenButton (usa tama√±o original guardado)
 	openButton.MouseEnter:Connect(function()
-		local success, _ = pcall(function()
+		pcall(function()
 			TweenService:Create(openButton, TweenInfo.new(0.15), {Size = openButtonOriginalSize + UDim2.new(0,6,0,6)}):Play()
 		end)
 	end)
 	openButton.MouseLeave:Connect(function()
-		local success, _ = pcall(function()
+		pcall(function()
 			TweenService:Create(openButton, TweenInfo.new(0.15), {Size = openButtonOriginalSize}):Play()
 		end)
 	end)
 	
 end
-coroutine.wrap(QUTOWH_fake_script)()
+coroutine.wrap(CERYMSG_fake_script)()
+local function BPBXA_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- LocalScript independiente para INVISIBILIDAD (corregido)
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local gui = script.Parent
+	local invisibleButton = gui:WaitForChild("MainFrame"):WaitForChild("InvisibleButton")
+	
+	local invisibleActive = false
+	local invisibleConn
+	local character
+	
+	-- Funci√≥n para aplicar LocalTransparencyModifier
+	local function setLocalTransparencyForCharacter(char, value)
+		if not char then return end
+		for _, obj in ipairs(char:GetDescendants()) do
+			if obj:IsA("BasePart") then
+				pcall(function() obj.LocalTransparencyModifier = value end)
+			elseif obj:IsA("Decal") then
+				pcall(function() obj.Transparency = value end)
+			end
+		end
+	end
+	
+	-- Activar invisibilidad
+	local function startInvisible()
+		invisibleActive = true
+		invisibleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		if character then setLocalTransparencyForCharacter(character,1) end
+	
+		if invisibleConn then invisibleConn:Disconnect() end
+		invisibleConn = RunService.RenderStepped:Connect(function()
+			if invisibleActive and character then
+				setLocalTransparencyForCharacter(character,1)
+			end
+		end)
+	end
+	
+	-- Desactivar invisibilidad
+	local function stopInvisible()
+		invisibleActive = false
+		invisibleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		if character then setLocalTransparencyForCharacter(character,0) end
+		if invisibleConn then invisibleConn:Disconnect() invisibleConn = nil end
+	end
+	
+	-- Reconectar personaje al respawnear
+	local function onCharacterAdded(char)
+		character = char
+		-- NO activamos invisibilidad autom√°ticamente
+		-- Solo si invisibleActive es true (despu√©s de que el jugador haya presionado el bot√≥n)
+		if invisibleActive then startInvisible() end
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+	
+	-- Conexi√≥n del bot√≥n
+	invisibleButton.MouseButton1Click:Connect(function()
+		if invisibleActive then
+			stopInvisible()
+		else
+			startInvisible()
+		end
+	end)
+	
+	-- Inicializar personaje actual
+	character = player.Character
+	
+end
+coroutine.wrap(BPBXA_fake_script)()
